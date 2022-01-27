@@ -3,12 +3,21 @@
 .footer-container {     
     
     height: 100px;
-    background: $black ;
+    background: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 
     p {
         color: whitesmoke;
+        font-size: 12px;
+    }
+
+    @include desktop {
+
+        p {
+            font-size: 14px;
+        }
     }
 }

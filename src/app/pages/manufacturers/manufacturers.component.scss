@@ -2,23 +2,42 @@
  
 h1 {
     text-align: center;
-    margin: 50px;    
+    margin-top: 50px;
+    margin-bottom: 20px;    
     font-weight: bold;
+    font-size: 22px;
+
+    @include desktop {
+        font-size: 28px;
+    }
 }
 
-.manufacturers-container{   
-    margin: 60px;
+.manufacturers-container{
+    width: 100vw;   
+    margin: 10px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;   
 
+    @include desktop {
+          
+        margin: 60px auto; 
 
-
+    }
     .manufacturers-container__item {        
-        width: 450px;
-        height: 450px;
-        margin: 20px;
+        width: 370px;
+        min-width: 300px;
+        height: 370px;
+        margin: 15px;
         box-shadow: 3px 3px 8px 2px #000 ;
+
+        @include desktop {
+            width: 450px;
+            height: 450px;
+            margin: 40px;
+            box-shadow: 3px 3px 8px 2px #000 ;
+
+        }
         
         &:hover {
             cursor: pointer;
@@ -40,7 +59,4 @@ h1 {
             text-transform: uppercase;
         }
     }
-
-
-
 }

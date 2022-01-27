@@ -39,13 +39,14 @@ body{
     background: rgb(250, 249, 249);
     color: black;
     transition: 0.2s;
+    margin: 0;    
 }
 
 
 body.darkMode {
     padding-top: 80px;
     color: white;
-    background: rgb(53, 54, 58);
+    background: rgb(30, 30, 30);
     transition: 0.2s;
 }
 

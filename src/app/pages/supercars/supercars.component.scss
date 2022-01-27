@@ -2,23 +2,33 @@
 
 h1 {
     text-align: center;
-    margin: 50px;    
+    margin-top: 60px;
+     
     font-weight: bold;
+    font-size: 22px;
+
+    @include desktop {
+        font-size: 32 ;
+    }
 }
 
-.superCars-container{    
-    margin: 40px;
+.superCars-container{ 
+    width: 100vw;   
+    margin: 40px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-    
+    justify-content: center;    
 
     &__card {
         width: 350px;
         height: 350px;
-        margin: 20px;
+        margin: 15px;
         box-shadow: 3px 3px 8px 2px #000000; 
+
+        @include desktop {
+
+            margin: 25px;
+        }
 
         &:hover {
             cursor: pointer;
@@ -46,9 +56,7 @@ h1 {
 
             img {
                 width: 350px;
-            }
-
-            
+            }            
         }
     }  
 }
