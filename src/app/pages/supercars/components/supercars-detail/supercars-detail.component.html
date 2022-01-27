@@ -1,0 +1,9 @@
+<div class="supercar-container" *ngIf="superCar">
+    <div class="supercar-container__card">
+        <h2>{{superCar.model}}</h2>
+        <img src="{{superCar.img}}" alt="{{superCar.model}}">
+        <p><span>Year:</span> {{superCar.year}}</p>
+        <p><span>Engine:</span> {{superCar.engine}}</p>
+        <p><span>Hp:</span> {{superCar.hp}}</p>
+    </div>
+</div>

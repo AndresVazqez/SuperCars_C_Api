@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+//Colors//
+$black: #03071e;
+$darkRed: #9d0208;
+$orange: #e85d04;
+$yellow: #faa307;
+//variables
+
+$tablet: 768px; //768
+$desktop: 992px;
+$large: 1200px;
+
+@mixin tablet {
+  @media only screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: $large) {
+    @content;
+  }
+}
+
+//Resets Styles
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+body{
+    padding-top: 80px;
+    background: rgb(250, 249, 249);
+    color: black;
+    transition: 0.2s;
+}
+
+
+body.darkMode {
+    padding-top: 80px;
+    color: white;
+    background: rgb(53, 54, 58);
+    transition: 0.2s;
+}
+
+
+

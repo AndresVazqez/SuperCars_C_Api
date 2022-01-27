@@ -1,0 +1,20 @@
+h3 {
+    text-align: center;
+    margin: 50px;
+    font-size: 24px;
+}
+
+.about-container {
+    width: 100%;
+    .about-container__parag {
+        width: 50vw;
+        margin: 50px auto;
+
+        p{
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.7rem;
+
+        }
+    }
+}

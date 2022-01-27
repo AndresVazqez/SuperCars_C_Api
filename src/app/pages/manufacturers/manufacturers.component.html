@@ -1,0 +1,7 @@
+<h1>MANUFACTURERS</h1>
+<div class="manufacturers-container" *ngIf="manufacturers.length">
+    <div class="manufacturers-container__item" *ngFor="let manufacturer of manufacturers" 
+    style="background: url('{{manufacturer.logo}}'); background-size: cover; background-position: center" routerLink="{{manufacturer._id}}">
+        <h6>{{manufacturer.name}}</h6>
+    </div>
+</div>

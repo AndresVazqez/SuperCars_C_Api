@@ -1,0 +1,8 @@
+<h1>SUPERCARS</h1>
+<div class="superCars-container" *ngIf='superCars.length'>
+    <div class="superCars-container__card" *ngFor="let car of superCars"
+        style="background: url('{{car.img}}'); background-size: cover; background-position: center"
+        routerLink="{{car._id}}">
+        <h6>{{car.model}}</h6>
+    </div>
+</div>
